@@ -33,7 +33,7 @@ under the License.
             <set field="parameters.statusId" value="PRODUCT_ACTIVE"/>
             <set field="parameters.partyId" value="DemoCustomer-1"/>
             <set field="parameters.partyCompany" value="Demo Scrum Company[DemoScrumCompany] - Scrum Product Owner (DemoCustomer-1)"/>
-            <call-simple-method method-name="createProductAndRole" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+            <call-simple-method method-name="createProductAndRole" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
         </simple-method>
         
         <simple-method method-name="testUpdateProductByAdmin" short-description="" login-required="false">
@@ -49,7 +49,7 @@ under the License.
             <set field="parameters.partyId" value="DemoCustomer-1"/>
             <set field="parameters.partyCompany" value="Demo Scrum Company[DemoScrumCompany] - Scrum Product Owner (DemoCustomer-1)"/>
             <set field="parameters.productId" value="DEMO-PRODUCT-1"/>
-            <call-simple-method method-name="updateProduct" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+            <call-simple-method method-name="updateProduct" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
         </simple-method>
         
         <!-- Billing -->

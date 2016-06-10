@@ -37,6 +37,6 @@ under the License.
             <set field="formInput.formInput.resourceStatusId" value="CTNT_PUBLISHED"/>
             <set field="formInput.formInput.workEffortContentTypeId" value="CREATED_MEDIA"/>
             <set field="formInput.formInput.partyId" value="SCRUMTEAM-1"/>
-            <call-simple-method method-name="createTestTask" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+            <call-simple-method method-name="createTestTask" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
         </simple-method>
 </simple-methods>

@@ -1170,7 +1170,7 @@
                     <else>
                         <!-- new assignment -->
                         <call-simple-method method-name="assignPartyToWorkEffort"
-                            xml-resource="component://workeffort/script/org/ofbiz/workeffort/workeffort/WorkEffortSimpleServices.xml" />
+                            xml-resource="component://workeffort/minilang/workeffort/WorkEffortSimpleServices.xml" />
                     </else>
                 </if-not-empty>
             </else>

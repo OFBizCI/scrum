@@ -30,7 +30,7 @@ under the License.
         <set field="parameters.custRequestName" value="TEST Product Backlog"/>
         <set field="parameters.productId" value="DEMO-PRODUCT-1"/>
         <set field="parameters.description" value="TEST Product Backlog"/>
-        <call-simple-method method-name="createProductBacklog" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+        <call-simple-method method-name="createProductBacklog" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
     </simple-method>
     
     <simple-method method-name="testCreateProductBacklogByProductOwner" short-description="Test Create Product Backlog" login-required="false">
@@ -42,7 +42,7 @@ under the License.
         <set field="parameters.custRequestName" value="TEST Product Backlog"/>
         <set field="parameters.productId" value="DEMO-PRODUCT-1"/>
         <set field="parameters.description" value="TEST Product Backlog"/>
-        <call-simple-method method-name="createProductBacklog" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+        <call-simple-method method-name="createProductBacklog" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
     </simple-method>
     
     <simple-method method-name="testCreateProductBacklogByScrumMaster" short-description="Test Create Product Backlog" login-required="false">
@@ -54,7 +54,7 @@ under the License.
         <set field="parameters.custRequestName" value="TEST Product Backlog"/>
         <set field="parameters.productId" value="DEMO-PRODUCT-1"/>
         <set field="parameters.description" value="TEST Product Backlog"/>
-        <call-simple-method method-name="createProductBacklog" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+        <call-simple-method method-name="createProductBacklog" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
     </simple-method>
     
     <simple-method method-name="testUpdateProductBacklogByAdmin" short-description="Test Update Product Backlog" login-required="false">
@@ -67,7 +67,7 @@ under the License.
         <set field="parameters.custRequestName" value="TEST Product Backlog"/>
         <set field="parameters.noteInfo" value="TestNote"/>
         <set field="parameters.description" value="TEST Product Backlog"/>
-        <call-simple-method method-name="updateProductBacklog" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+        <call-simple-method method-name="updateProductBacklog" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
     </simple-method>
     
     <simple-method method-name="testUpdateProductBacklogByProductOwner" short-description="Test Update Product Backlog" login-required="false">
@@ -84,7 +84,7 @@ under the License.
         <set field="parameters.noteId" value="NOTE-1"/>
         <set field="parameters.noteInfo" value="TestNote"/>
         <set field="parameters.valueAcsr" value=""/>
-        <call-simple-method method-name="updateProductBacklog" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+        <call-simple-method method-name="updateProductBacklog" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
     </simple-method>
     
     <simple-method method-name="testDeleteProductBacklogByAdmin" short-description="Test Delete Product Backlog" login-required="false">
@@ -99,7 +99,7 @@ under the License.
             <field-map field-name="custRequestId" from-field="parameters.custRequestId"/>
         </entity-one>
         <if-compare operator="equals" value="CRQ_ACCEPTED" field="result.statusId">
-            <call-simple-method method-name="deleteCustRequest" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+            <call-simple-method method-name="deleteCustRequest" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
         </if-compare>
     </simple-method>
     
@@ -115,7 +115,7 @@ under the License.
             <field-map field-name="custRequestId" from-field="parameters.custRequestId"/>
         </entity-one>
         <if-compare operator="equals" value="CRQ_ACCEPTED" field="result.statusId">
-            <call-simple-method method-name="deleteCustRequest" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+            <call-simple-method method-name="deleteCustRequest" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
         </if-compare>
     </simple-method>
     
@@ -127,7 +127,7 @@ under the License.
         <set field="parameters.userLogin" from-field="userLogin"/>
         <set field="parameters.productId" value="DEMO-PRODUCT-1"/>
         <set field="parameters.custRequestId" value="TEST7"/>
-        <call-simple-method method-name="deleteCustRequest" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+        <call-simple-method method-name="deleteCustRequest" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
     </simple-method>
     
     <simple-method method-name="testCreateBacklogSetStatus" short-description=" Test Set Status Create Product Backlog" login-required="false">
@@ -139,7 +139,7 @@ under the License.
         <set field="parameters.custRequestName" value="TEST Product Backlog"/>
         <set field="parameters.productId" value="DEMO-PRODUCT-1"/>
         <set field="parameters.description" value ="TEST Product Backlog"/>
-        <call-simple-method method-name="createProductBacklog" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+        <call-simple-method method-name="createProductBacklog" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
     </simple-method>
     
     <simple-method method-name="testCreateDefaultBacklogs" short-description="Test Create DefaultBacklogs" login-required="false">
@@ -156,7 +156,7 @@ under the License.
         <set field="parameters.workEffortTypeId" value="SCRUM_TASK_IMPL"/>
         <set field="parameters.workEffortPurposeTypeId" value="SCRUM_DEFAULT_TASK"/>
         <set field="parameters.currentStatusId" value="STS_CREATED"/>
-        <call-simple-method method-name="createDefaultTask" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml" />
+        <call-simple-method method-name="createDefaultTask" xml-resource="component://scrum/minilang/ScrumEvents.xml" />
     </simple-method>
     
     <simple-method method-name="testCreateProductBacklogCategory" short-description="Test Create Product Backlog Category" login-required="false">
@@ -167,7 +167,7 @@ under the License.
         <set field="parameters.productId" value="DEMO-PRODUCT-1"/>
         <set field="parameters.custRequestId" value="TEST11"/>
         <set field="parameters.custRequestName" value="Backlog"/>
-        <call-simple-method method-name="createProductBacklogCategory" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+        <call-simple-method method-name="createProductBacklogCategory" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
     </simple-method>
     
     <simple-method method-name="testUpdateProductBacklogCategory" short-description="Test Update Product Backlog Category" login-required="false">
@@ -178,7 +178,7 @@ under the License.
         <set field="parameters.productId" value="DEMO-PRODUCT-1"/>
         <set field="parameters.custRequestId" value="TEST10"/>
         <set field="parameters.custRequestName" value="Backlog"/>
-        <call-simple-method method-name="updateProductBacklogCategory" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+        <call-simple-method method-name="updateProductBacklogCategory" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
     </simple-method>
     
     <simple-method method-name="testNewProductBacklogEmail" short-description="Test New Product Backlog Email" login-required="false">

@@ -33,7 +33,7 @@ under the License.
         <set field="parameters.workEffortTypeId" value="SCRUM_PROJECT"/>
         <set field="parameters.partyId" value="DemoCustomer-1"/>
         <set field="parameters.userLogin" from-field="userLogin"/>
-        <call-simple-method method-name="createScrumProject" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+        <call-simple-method method-name="createScrumProject" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
     </simple-method>
     
     <simple-method method-name="testUpdateScrumProjectByProductOwner" short-description="Test Create Scrum Project" login-required="false">
@@ -48,7 +48,7 @@ under the License.
         <set field="parameters.workEffortTypeId" value="SCRUM_PROJECT"/>
         <set field="parameters.partyId" value="DemoCustomer-1"/>
         <set field="parameters.userLogin" from-field="userLogin"/>
-        <call-simple-method method-name="updateScrumProject" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+        <call-simple-method method-name="updateScrumProject" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
     </simple-method>
     
     <simple-method method-name="testUpdateScrumProjectByScrumMaster" short-description="Test Create Scrum Project" login-required="false">
@@ -63,7 +63,7 @@ under the License.
         <set field="parameters.workEffortTypeId" value="SCRUM_PROJECT"/>
         <set field="parameters.partyId" value="SCRUMASTER"/>
         <set field="parameters.userLogin" from-field="userLogin"/>
-        <call-simple-method method-name="updateScrumProject" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+        <call-simple-method method-name="updateScrumProject" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
     </simple-method>
     
     <simple-method method-name="testCloseScrumProject" short-description="Test Close Scrum Project " login-required="false">
@@ -74,7 +74,7 @@ under the License.
         <set field="parameters.workEffortId" value="DEMO-PROJECT-1"/>
         <set field="parameters.productId" value="DEMO-PRODUCT-1"/>
         <set field="parameters.currentStatusId" value="SPJ_CLOSED" />
-        <call-simple-method method-name="updateScrumProject" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml" />
+        <call-simple-method method-name="updateScrumProject" xml-resource="component://scrum/minilang/ScrumEvents.xml" />
     </simple-method>
     
 </simple-methods>

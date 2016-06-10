@@ -34,6 +34,6 @@ under the License.
         <set field="noteData.noteParty" from-field="userLogin"/>
         <set field="noteData.partyId" value="admin"/>
         <set field="noteData.noteDateTime" value="2010-10-13" type="Timestamp"/>
-        <call-simple-method method-name="createDailyNote" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+        <call-simple-method method-name="createDailyNote" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
     </simple-method>
 </simple-methods>

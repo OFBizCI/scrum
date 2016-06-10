@@ -54,7 +54,7 @@ under the License.
         <set field="parameters.workEffortId" value="DEMO-SPRINT-1"/>
         <set field="parameters.taskId" value="DEMO-TASK-2"/>
         <set field="parameters.partyId" value="SCRUMTEAM-2"/>
-        <call-simple-method method-name="updateTask" xml-resource="component://scrum/script/org/ofbiz/scrum/ScrumEvents.xml"/>
+        <call-simple-method method-name="updateTask" xml-resource="component://scrum/minilang/ScrumEvents.xml"/>
     </simple-method>
     
     <simple-method method-name="testRemoveTaskAssignToMe" short-description="Test remove task assign to me" login-required="false">

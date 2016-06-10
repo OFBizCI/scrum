@@ -3415,7 +3415,7 @@
         <set field="contentMap.userLogin" from-field="systemUserLogin"/>
         <set field="partycontent.userLogin" from-field="systemUserLogin"/>
         <set field="contentAssoc.userLogin" from-field="systemUserLogin"/>
-        <call-simple-method method-name="createCommunicationEventContent" xml-resource="component://party/script/org/ofbiz/party/communication/CommunicationEventEvents.xml"/>
+        <call-simple-method method-name="createCommunicationEventContent" xml-resource="component://party/minilang/communication/CommunicationEventEvents.xml"/>
     </simple-method>
     
     <simple-method method-name="updateScrumTimeEntry" short-description="Update TimeEntry in the Scrum component">
